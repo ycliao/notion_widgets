@@ -105,18 +105,6 @@
 				grid-column: span 1;
 			}
 
-			.skeleton,
-			#company-profile,
-			#fundamental-data,
-			#technical-analysis,
-			#top-stories {
-				text-align: center;
-				padding: 16px;
-				font-size: 24px;
-				background: rgba(0, 0, 0, 0.075);
-				border-radius: 4px;
-			}
-
 			#ticker-tape {
 				width: 100%;
 				margin-bottom: var(--gap-size);
@@ -166,25 +154,24 @@
 			}
 		</style>
 	</head>
-  <body>
-    <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-crypto-coins-heatmap.js" async>
-      {
-      "dataSource": "Crypto",
-      "blockSize": "market_cap_calc",
-      "blockColor": "change",
-      "locale": "en",
-      "symbolUrl": "",
-      "colorTheme": "dark",
-      "hasTopBar": false,
-      "isDataSetEnabled": false,
-      "isZoomEnabled": true,
-      "hasSymbolTooltip": true,
-      "width": "100%",
-      "height": "100%"
-    }
-    </div>
-  </body>
+	<body>
+		<header>
+		</header>
+		<nav id="ticker-tape">
+		</nav>
+		<main>
+			<section id="symbol-info">
+			</section>
+			<section id="advanced-chart">
+			</section>
+			<section id="company-profile">
+			</section>
+			<section id="fundamental-data">
+			</section>
+			<section id="technical-analysis">
+			</section>
+			<section id="top-stories">
+			</section>
+		</main>
+	</body>
 </html>
